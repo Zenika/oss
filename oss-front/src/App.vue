@@ -1,23 +1,26 @@
 <template>
   <div id="app">
-    <oss-header></oss-header>
-    <router-view/>
+    <div class="page">
+      <oss-header></oss-header>
+      <router-view></router-view>
+      <oss-footer></oss-footer>
+    </div>
   </div>
 </template>
 
 <script>
 import Header from '@/components/Header';
+import Footer from '@/components/Footer';
 
 export default {
   name: 'app',
   components: {
     'oss-header': Header,
+    'oss-footer': Footer,
   },
 };
 </script>
 
-<style>
-#app {
+<style scoped>
 
-}
 </style>
