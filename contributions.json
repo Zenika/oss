@@ -1,34 +1,36 @@
-[
-  {
-    name: 'IoT',
-    contributions: [
-      {
-        name: 'MARIE',
-        description: 'Pouet',
-        link: 'https://github.com/Zenika/MARIE',
-      },
-      {
-        name: 'MARIE',
-        description: 'Pouet',
-      },
+{
+  "sections":[
     {
-        name: 'MARIE',
-        description: 'Pouet',
-      },
-      {
-        name: 'MARIE',
-        description: 'Pouet',
-      },
-    ],
-  },
-  {
-    name: 'Big Data',
-    contributions: [
-      {
-        name: 'TEST',
-        description: 'TestBigData',
-        link: 'http://google.com',
-      },
-    ],
-  },
-]
+      "name": "IoT",
+      "contributions": [
+        {
+          "name": "MARIE",
+          "description": "Pouet",
+          "link": "https://github.com/Zenika/MARIE",
+        },
+        {
+          "name": "MARIE",
+          "description": "Pouet",
+        },
+        {
+          "name": "MARIE",
+          "description": "Pouet",
+        },
+        {
+          "name": "MARIE",
+          "description": "Pouet",
+        },
+      ],
+    },
+    {
+      "name": "Big Data",
+      "contributions": [
+        {
+          "name": "TEST",
+          "description": "TestBigData",
+          "link": "http://google.com",
+        },
+      ],
+    },
+  ]
+}
