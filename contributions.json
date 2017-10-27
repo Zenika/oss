@@ -6,34 +6,17 @@
         {
           "name": "MARIE",
           "description": "Pouet",
-          "link": "https://github.com/Zenika/MARIE",
+          "links": [
+            {
+              "name": "Github",
+              "url": "https://github.com/Zenika/MARIE"
+            }
+          ],
           "contributors": [
             {
               "name": "Sehsyha" 
             }
           ]
-        },
-        {
-          "name": "MARIE",
-          "description": "Pouet"
-        },
-        {
-          "name": "MARIE",
-          "description": "Pouet"
-        },
-        {
-          "name": "MARIE",
-          "description": "Pouet"
-        }
-      ]
-    },
-    {
-      "name": "Big Data",
-      "contributions": [
-        {
-          "name": "TEST",
-          "description": "TestBigData",
-          "link": "http://google.com"
         }
       ]
     }
