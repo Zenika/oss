@@ -3,7 +3,7 @@
     <div class="content-inner">
       <div class="container-fluid">
         <div v-for="section in sections" :key="section.name">
-          <h2>{{section.name}}</h2>
+          <h1>{{section.name}}</h1>
           <div class="row">
             <div v-for="contribution in section.contributions" :key="contribution.name" class="col-4">
               <div class="card">
@@ -12,6 +12,9 @@
                 </div>
                 <div class="card-body">
                   {{contribution.description}}
+                </div>
+                <div class="card-footer d-flex align-items-center" v-if="contribution.link">
+                  <a target="_blank" type="submit" :href="contribution.link" class="btn btn-secondary float-left">Github</a>
                 </div>
               </div>
             </div>
@@ -28,30 +31,17 @@ export default {
   name: 'oss-contributions',
   data() {
     return {
-      sections: [
-        {
-          name: 'IoT',
-          contributions: [
-            {
-              name: 'MARIE',
-              description: 'Pouet',
-            },
-            {
-              name: 'MARIE',
-              description: 'Pouet',
-            },
-            {
-              name: 'MARIE',
-              description: 'Pouet',
-            },
-            {
-              name: 'MARIE',
-              description: 'Pouet',
-            },
-          ],
-        },
-      ],
+      sections: [],
     };
+  },
+  created() {
+    this.getContributions();
+  },
+  methods: {
+    getContributions() {
+      this.$http.get('https://raw.githubusercontent.com/Zenika/oss/master/contributions.json')
+        .then((res) => { this.sections = res.data.sections; });
+    },
   },
 };
 </script>
