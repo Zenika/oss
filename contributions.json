@@ -6,21 +6,21 @@
         {
           "name": "MARIE",
           "description": "Pouet",
-          "link": "https://github.com/Zenika/MARIE",
+          "link": "https://github.com/Zenika/MARIE"
         },
         {
           "name": "MARIE",
-          "description": "Pouet",
+          "description": "Pouet"
         },
         {
           "name": "MARIE",
-          "description": "Pouet",
+          "description": "Pouet"
         },
         {
           "name": "MARIE",
-          "description": "Pouet",
-        },
-      ],
+          "description": "Pouet"
+        }
+      ]
     },
     {
       "name": "Big Data",
@@ -28,9 +28,9 @@
         {
           "name": "TEST",
           "description": "TestBigData",
-          "link": "http://google.com",
-        },
-      ],
-    },
+          "link": "http://google.com"
+        }
+      ]
+    }
   ]
 }
