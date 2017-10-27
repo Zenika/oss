@@ -6,7 +6,12 @@
         {
           "name": "MARIE",
           "description": "Pouet",
-          "link": "https://github.com/Zenika/MARIE"
+          "link": "https://github.com/Zenika/MARIE",
+          "contributors": [
+            {
+              "name": "Sehsyha" 
+            }
+          ]
         },
         {
           "name": "MARIE",
