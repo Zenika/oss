@@ -27,5 +27,11 @@ export default {
 </script>
 
 <style scoped>
-
+.main-footer {
+  background-color: #b31835;
+  position: fixed;
+  height: 40px;
+  bottom: 0;
+  width: 100%;
+}
 </style>
