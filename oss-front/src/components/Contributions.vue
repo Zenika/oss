@@ -5,13 +5,16 @@
         <div v-for="section in sections" :key="section.name">
           <h1>{{section.name}}</h1>
           <div class="row">
-            <div v-for="contribution in section.contributions" :key="contribution.name" class="col-4">
+            <div v-for="contribution in section.contributions" :key="contribution.name" class="col-lg-3 col-sm-6">
               <div class="card">
                 <div class="card-header">
                   <h3>{{contribution.name}}</h3>
                 </div>
                 <div class="card-body">
-                  {{contribution.description}}
+                  {{contribution.description}}<br />
+                  <span class="badge badge-secondary" v-for="contributor in contribution.contributors" :key="contributor.name">
+                    @{{contributor.name}}
+                  </span>
                 </div>
                 <div class="card-footer d-flex align-items-center" v-if="contribution.link">
                   <a target="_blank" type="submit" :href="contribution.link" class="btn btn-secondary float-left">Github</a>
