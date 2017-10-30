@@ -1,11 +1,13 @@
 version: 2
 jobs:
   build:
-    working_directory: ~/oss-front
     docker:
       - image: circleci/node:8.8.1
     steps:
       - checkout
+      - run:
+          name: change-directory
+          command: 'cd oss-front'
       - run:
           name: update-npm
           command: 'sudo npm install -g npm@latest'
