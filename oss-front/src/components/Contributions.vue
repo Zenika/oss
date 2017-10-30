@@ -16,8 +16,10 @@
                     @{{contributor.name}}
                   </span>
                 </div>
-                <div class="card-footer d-flex align-items-center" v-if="contribution.link">
-                  <a target="_blank" type="submit" :href="contribution.link" class="btn btn-secondary float-left">Github</a>
+                <div class="card-footer d-flex align-items-center" v-if="contribution.links">
+                  <a target="_blank" v-for="link in contribution.links" :key="link.name" :href="link.url"  class="btn btn-secondary float-left">
+                    {{link.name}}
+                  </a>
                 </div>
               </div>
             </div>
