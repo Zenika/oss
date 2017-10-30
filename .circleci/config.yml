@@ -6,11 +6,8 @@ jobs:
     steps:
       - checkout
       - run:
-          name: change-directory
-          command: 'cd oss-front'
-      - run:
           name: install-npm-wee
-          command: npm install
+          command: 'cd oss-front && npm install'
       - run:
           name: build
-          command: npm run build
+          command: 'cd oss-front && npm run build'
