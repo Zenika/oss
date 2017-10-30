@@ -1,0 +1,10 @@
+machine:
+  node:
+    version: 8.0.0
+
+deployment:
+  master:
+    branch: master
+    commands:
+      # Build vue project
+      npm run build
