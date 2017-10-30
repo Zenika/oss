@@ -7,4 +7,5 @@ deployment:
     branch: master
     commands:
       # Build vue project
+      cd oss-front
       npm run build
