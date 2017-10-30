@@ -1,11 +1,10 @@
-machine:
-  node:
-    version: 8.0.0
-
-deployment:
-  master:
-    branch: master
-    commands:
-      # Build vue project
-      cd oss-front
-      npm run build
+jobs:
+  build:
+    working_directory: ~/oss-front
+    machine:
+      node:
+        - version: 8.0.0
+    steps:
+      - checkout
+      - run:
+          command: 'npm run build'
