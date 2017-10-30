@@ -1,0 +1,24 @@
+{
+  "sections":[
+    {
+      "name": "IoT",
+      "contributions": [
+        {
+          "name": "MARIE",
+          "description": "Pouet",
+          "links": [
+            {
+              "name": "Github",
+              "url": "https://github.com/Zenika/MARIE"
+            }
+          ],
+          "contributors": [
+            {
+              "name": "Sehsyha" 
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

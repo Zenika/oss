@@ -1,0 +1,13 @@
+version: 2
+jobs:
+  build:
+    docker:
+      - image: circleci/node:8.8.1
+    steps:
+      - checkout
+      - run:
+          name: install-npm-wee
+          command: 'cd oss-front && npm install'
+      - run:
+          name: build
+          command: 'cd oss-front && npm run build'
